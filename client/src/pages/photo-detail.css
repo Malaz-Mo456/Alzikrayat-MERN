@@ -1,0 +1,267 @@
+/* PHOTO DETAIL PAGE*/
+
+.photo-detail-page {
+    width: 86%;
+    max-width: 1100px;
+    min-height: 65vh;
+    margin: 55px auto 90px;
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 25px;
+    color: var(--secondary-color);
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    color: var(--secondary-hover);
+}
+
+.photo-detail-card {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    background: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.photo-detail-image-wrapper {
+    min-height: 420px;
+    background: var(--primary-color);
+}
+
+.photo-detail-image {
+    width: 100%;
+    height: 100%;
+    min-height: 420px;
+    display: block;
+    object-fit: cover;
+}
+
+.photo-detail-info {
+    padding: 35px;
+    align-self: center;
+}
+
+.photo-detail-tag {
+    display: inline-block;
+    margin-bottom: 13px;
+    color: var(--secondary-color);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.photo-detail-info h1 {
+    margin-bottom: 18px;
+    color: var(--heading-color);
+    font-family: var(--heading-font);
+    font-size: 30px;
+}
+
+.photo-description {
+    color: var(--text-color);
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.photo-meta {
+    margin-top: 28px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border-color);
+}
+
+.photo-meta p {
+    margin-bottom: 12px;
+    color: var(--text-color);
+    font-size: 12px;
+}
+
+.photo-meta strong {
+    color: var(--heading-color);
+}
+
+/* Comments */
+
+.comments-section {
+    margin-top: 55px;
+    padding: 35px;
+    background: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+}
+
+.comments-heading {
+    margin-bottom: 25px;
+}
+
+.comments-heading h2 {
+    margin-bottom: 8px;
+    color: var(--heading-color);
+    font-family: var(--heading-font);
+    font-size: 28px;
+}
+
+.comments-heading p {
+    color: var(--text-color);
+    font-size: 13px;
+}
+
+.comments-list {
+    margin-bottom: 30px;
+}
+
+.comment-item {
+    padding: 18px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.comment-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.comment-header strong {
+    color: var(--heading-color);
+    font-size: 13px;
+}
+
+.comment-header small {
+    color: var(--text-color);
+    font-size: 10px;
+}
+
+.comment-item p {
+    color: var(--text-color);
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.no-comments {
+    padding: 20px 0;
+    color: var(--text-color);
+    font-size: 13px;
+}
+
+/* Comment form */
+
+.comment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.comment-form label {
+    color: var(--heading-color);
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.comment-form textarea {
+    width: 100%;
+    min-height: 110px;
+    padding: 14px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    outline: none;
+    resize: vertical;
+    font: inherit;
+    font-size: 13px;
+}
+
+.comment-form textarea:focus {
+    border-color: var(--secondary-color);
+}
+
+.comment-form button {
+    align-self: flex-start;
+    padding: 12px 24px;
+    background: var(--secondary-color);
+    border: none;
+    border-radius: 4px;
+    color: var(--white);
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.comment-form button:hover {
+    background: var(--secondary-hover);
+}
+
+.comment-form button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.photo-detail-message {
+    width: 86%;
+    max-width: 800px;
+    min-height: 45vh;
+    margin: 60px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    color: var(--text-color);
+}
+
+.photo-detail-message a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.error-message {
+    color: #dc2626;
+    font-size: 13px;
+}
+
+@media (max-width: 768px) {
+    .photo-detail-page {
+        width: 92%;
+        margin: 35px auto 65px;
+    }
+
+    .photo-detail-card {
+        grid-template-columns: 1fr;
+    }
+
+    .photo-detail-image-wrapper,
+    .photo-detail-image {
+        min-height: 300px;
+        max-height: 450px;
+    }
+
+    .photo-detail-info {
+        padding: 25px;
+    }
+
+    .comments-section {
+        padding: 25px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .photo-detail-image-wrapper,
+    .photo-detail-image {
+        min-height: 250px;
+    }
+
+    .photo-detail-info h1 {
+        font-size: 25px;
+    }
+
+    .comment-header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 5px;
+    }
+}

@@ -1,0 +1,123 @@
+/* Alzikrayat - Global Styles */
+
+/* Import the fonts used in the original design */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+/* Main color palette and fonts */
+:root {
+    --primary-color: #0F172A;
+    --secondary-color: #10B981;
+    --secondary-hover: #059669;
+    --accent-color: #0D9488;
+
+    --heading-color: #0F172A;
+    --text-color: #64748B;
+    --background-color: #F8FAFC;
+    --white: #FFFFFF;
+    --border-color: #E2E8F0;
+
+    --heading-font: 'Playfair Display', Georgia, serif;
+    --body-font: 'Inter', Arial, sans-serif;
+
+    --main-shadow: 0 4px 15px rgba(15, 23, 42, 0.08);
+}
+
+/* Apply consistent sizing to all elements */
+* {
+    box-sizing: border-box;
+}
+
+/* Remove default browser spacing */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+}
+
+/* Enable smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Main page settings */
+body {
+    font-family: var(--body-font);
+    color: var(--text-color);
+    background-color: var(--background-color);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Make the React application use the full screen */
+#root {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main content takes the available space */
+.app-content {
+    flex: 1;
+    width: 100%;
+}
+
+/* Main headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--heading-font);
+    color: var(--heading-color);
+    margin-top: 0;
+}
+
+/* Paragraphs */
+p {
+    margin-top: 0;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* Buttons */
+button {
+    font-family: inherit;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* Form elements */
+input,
+textarea,
+select {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Remove default list styling */
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    body {
+        font-size: 15px;
+    }
+}
