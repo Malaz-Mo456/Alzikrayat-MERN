@@ -1,0 +1,16 @@
+node_modules/
+client/node_modules/
+server/node_modules/
+
+.env
+.env.*
+!.env.example
+
+dist/
+build/
+
+.DS_Store
+Thumbs.db
+
+server/uploads/*
+!server/uploads/.gitkeep
